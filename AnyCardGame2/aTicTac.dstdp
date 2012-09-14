@@ -1,0 +1,40 @@
+﻿<panel style="float:left;">
+	<timer onfire="RandomClick|InformationToSend" id="someTimer"    ></timer>
+	<variable id="WhosTurn" value="X"></variable>
+	<table>
+		<tr>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="topleft"   />
+			</td>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="topmiddle" />
+			</td>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="topright" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="middleleft" />
+			</td>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="middlemiddle" />
+			</td>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="middleright" />
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="bottomleft" />
+			</td>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="bottommiddle" />
+			</td>
+			<td>
+				<button onclick="buttonClick|InformationToSend" label="_" id="bottomright" />
+			</td>
+		</tr>
+	</table>
+	<label value="" id="theLabel"></label>
+</panel>

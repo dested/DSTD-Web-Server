@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServer", "WebServer\WebServer.csproj", "{F4F59096-97D0-4587-85C9-4EA0FAC697D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnyCardGame2", "AnyCardGame2\AnyCardGame2.csproj", "{097EB5F1-B23B-4020-BA98-9C20E9603AF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnyCardGame2Classes", "AnyCardGame2Classes\AnyCardGame2Classes.csproj", "{0DD494DF-EAB1-4791-B6D3-3E39937C452F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F4F59096-97D0-4587-85C9-4EA0FAC697D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4F59096-97D0-4587-85C9-4EA0FAC697D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4F59096-97D0-4587-85C9-4EA0FAC697D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4F59096-97D0-4587-85C9-4EA0FAC697D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{097EB5F1-B23B-4020-BA98-9C20E9603AF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{097EB5F1-B23B-4020-BA98-9C20E9603AF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{097EB5F1-B23B-4020-BA98-9C20E9603AF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{097EB5F1-B23B-4020-BA98-9C20E9603AF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DD494DF-EAB1-4791-B6D3-3E39937C452F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DD494DF-EAB1-4791-B6D3-3E39937C452F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DD494DF-EAB1-4791-B6D3-3E39937C452F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DD494DF-EAB1-4791-B6D3-3E39937C452F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

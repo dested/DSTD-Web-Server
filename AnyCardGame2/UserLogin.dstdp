@@ -1,0 +1,26 @@
+﻿<panel>
+	<label id="theError"></label>
+	<table>
+		<tr>
+			<td>
+				<label text="Username"></label>
+			</td>
+			<td>
+				<textbox id="theUsername"></textbox>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label text="Password"></label>
+			</td>
+			<td>
+				<textbox id="thePassword"></textbox>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button id="theLoginUser" onclick="LoginUser|THIS" label="Login"></button>
+			</td>
+		</tr>
+	</table>
+</panel>

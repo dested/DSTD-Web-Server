@@ -1,0 +1,1 @@
+using System;using System.Collections;using System.Collections.Generic;using System.Data;using System.Data.SqlClient;using System.Text;using AnyCardGame2Classes.Data_;namespace AnyCardGame2Classes {public partial class myChatLine {} }namespace AnyCardGame2Classes.Data_ {public partial class myChatLineData {} }

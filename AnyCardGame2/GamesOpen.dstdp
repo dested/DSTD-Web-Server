@@ -1,0 +1,10 @@
+﻿<panel >
+
+	<panel id="theGameList">
+	</panel>
+	<panel visible="false" id="theNewGame">
+		<label text="Game Name"></label>
+		<textbox id="theGameName"></textbox>
+		<button label="Create" id="theGameButton" onclick="NewGame|THIS"></button>
+	</panel>
+</panel>

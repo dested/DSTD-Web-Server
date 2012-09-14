@@ -1,0 +1,75 @@
+﻿<page >
+	<panel id="calc" style="width:400px;">
+		<button id="but5ton99" label="1" onclick="Compute|calcResult" />
+		<button id="b56utton91" label="1" onclick="Compute|calcResult" />
+		<button id="6button91" label="1" onclick="Compute|calcResult" />
+		<button id="button9541" label="1" onclick="Compute|calcResult" />
+		<button id="butto54n91" label="1" onclick="Compute|calcResult" />
+		<button id="but54ton91" label="1" onclick="Compute|calcResult" />
+		<button id="b54utton91" label="1" onclick="Compute|calcResult" />
+		<button id="button19" label="1" onclick="Compute|calcResult" />
+		<button id="button1945" label="1" onclick="Compute|calcResult" />
+		<button id="button145" label="1" onclick="Compute|calcResult" />
+		<button id="butto45n91" label="1" onclick="Compute|calcResult" /> 
+		<panel id="calcResult">
+			<textbox id="result" text="0" enabled="false" style="width:137px;"></textbox>
+		</panel>
+		<panel id="calcContent">
+			<table>
+				<tr>
+					<td>
+						<button id="button1" label="1" onclick="Compute|calcResult" />
+					</td>
+					<td>
+						<button id="button2" label="2" onclick="Compute|calcResult" />
+					</td>
+					<td>
+						<button id="button3" label="3"  onclick="Compute|calcResult"/>
+					</td>
+					<td rowspan="5">
+						<button id="equal" style="height:130px;" label="="  onclick="Calc|calcResult"></button>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="button4" label="4" onclick="Compute|calcResult" />
+					</td>
+					<td>
+						<button id="button5" label="5" onclick="Compute|calcResult" />
+					</td>
+					<td>
+						<button id="button6" label="6" onclick="Compute|calcResult" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="button7" label="7"  onclick="Compute|calcResult"/>
+					</td>
+					<td>
+						<button id="button8" label="8"  onclick="Compute|calcResult"/>
+					</td>
+					<td>
+						<button id="button9" label="9"  onclick="Compute|calcResult"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="add" label="+"  onclick="Calc|calcResult"/>
+					</td>
+					<td> 
+						<button id="subtract" label="-"  onclick="Calc|calcResult"/>
+						<label text="foar"></label>
+					</td>
+					<td>
+						<button id="multiply" label="++"  onclick="Calc|calcResult"/>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3">
+						<button id="clear" style="width:93px;" label="clear"  onclick="Clear|calcResult"></button>
+					</td>
+				</tr>
+			</table>
+		</panel>
+	</panel>
+</page>

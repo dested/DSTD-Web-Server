@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-16"?>
+<database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Tables>
+    <databaseTable IsRelationship="false" ShouldBuild="true" TableName="GameRoom">
+      <Columns>
+        <databaseTableColumn ColumnName="GameRoomID" IsUnique="false" BuildGets="false" BuildStartEnd="false" ColumnType="Int" ColumnSize="0" AllowNull="false" AutoIncrement="true" />
+        <databaseTableColumn ColumnName="GameRoomName" IsUnique="true" BuildGets="false" BuildStartEnd="false" ColumnType="VarChar" ColumnSize="200" AllowNull="false" AutoIncrement="false" />
+      </Columns>
+      <Relationships>
+        <databaseTableRelationship Table1="GameRoom" Table2="User" />
+      </Relationships>
+      <Procs />
+    </databaseTable>
+    <databaseTable IsRelationship="false" ShouldBuild="true" TableName="User">
+      <Columns>
+        <databaseTableColumn ColumnName="UserID" IsUnique="false" BuildGets="false" BuildStartEnd="false" ColumnType="Int" ColumnSize="0" AllowNull="false" AutoIncrement="true" />
+        <databaseTableColumn ColumnName="SessionID" IsUnique="true" BuildGets="false" BuildStartEnd="false" ColumnType="VarChar" ColumnSize="200" AllowNull="false" AutoIncrement="false" />
+        <databaseTableColumn ColumnName="UserName" IsUnique="true" BuildGets="false" BuildStartEnd="false" ColumnType="VarChar" ColumnSize="200" AllowNull="false" AutoIncrement="false" />
+        <databaseTableColumn ColumnName="Password" IsUnique="false" BuildGets="false" BuildStartEnd="false" ColumnType="VarChar" ColumnSize="200" AllowNull="false" AutoIncrement="false" />
+      </Columns>
+      <Relationships />
+      <Procs />
+    </databaseTable>
+    <databaseTable IsRelationship="false" ShouldBuild="true" TableName="ChatLine">
+      <Columns>
+        <databaseTableColumn ColumnName="ChatLineID" IsUnique="false" BuildGets="false" BuildStartEnd="false" ColumnType="Int" ColumnSize="0" AllowNull="false" AutoIncrement="true" />
+        <databaseTableColumn ColumnName="UserID" IsUnique="false" BuildGets="false" BuildStartEnd="false" ColumnType="Int" RelatesToTable="User" ColumnSize="0" AllowNull="false" AutoIncrement="false" />
+        <databaseTableColumn ColumnName="GameRoomID" IsUnique="false" BuildGets="false" BuildStartEnd="false" ColumnType="Int" RelatesToTable="GameRoom" ColumnSize="0" AllowNull="false" AutoIncrement="false" />
+        <databaseTableColumn ColumnName="ChatLineContent" IsUnique="false" BuildGets="false" BuildStartEnd="false" ColumnType="VarChar" ColumnSize="1200" AllowNull="false" AutoIncrement="false" />
+        <databaseTableColumn ColumnName="TimePosted" IsUnique="false" BuildGets="false" BuildStartEnd="false" ColumnType="DateTime" ColumnSize="0" AllowNull="false" AutoIncrement="false" />
+      </Columns>
+      <Relationships>
+        <databaseTableRelationship Table1="ChatLine" Table2="User" />
+        <databaseTableRelationship Table1="ChatLine" Table2="GameRoom" />
+      </Relationships>
+      <Procs>
+        <databaseTableProcs>
+          <ProcName>GameRoomID_</ProcName>
+          <ReturnList>true</ReturnList>
+          <BuildCount>true</BuildCount>
+          <BuildPaging>true</BuildPaging>
+          <PagingOrderBy>ChatLineID</PagingOrderBy>
+          <ProcedureItems>
+            <databaseTableProcItems ColumnName="GameRoomID" />
+          </ProcedureItems>
+          <PagingASC>false</PagingASC>
+        </databaseTableProcs>
+      </Procs>
+    </databaseTable>
+  </Tables>
+  <NameSpace>AnyCardGame2</NameSpace>
+  <ConnectionString>server=DESTED3\DESTED4;database=AnyCardGame2;user id=DESTED3\\Administrator;Trusted_Connection=yes;Connection Lifetime=0;Max Pool Size=1000</ConnectionString>
+  <FileLocation>E:\my applications\sals\webserver\AnyCardGame2Classes\</FileLocation>
+</database>

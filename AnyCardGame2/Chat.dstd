@@ -1,0 +1,17 @@
+﻿<page >
+	<panel id="theChat" style="width:900px;">
+		<variable id="theUsername" value=""></variable>
+		<panel id="theChatBox" style="float:left;">
+			<timer id="time_" time="1500" onfire="getMessage|theChatBox"></timer>
+			<textbox id="theChatContent" multiline="true" rows="30" cols="75"></textbox>
+		</panel>
+		<textbox id="theChatText" onkeypressenter="SendMessage|theChat" style="width:560px;" ></textbox>
+		<button id="theChatButton" label="Send!" onclick="SendMessage|theChat" ></button>
+	</panel>
+	<panel id="theUsers" style="float:none;">
+		<timer id="time_" time="3800" onfire="getUsers|theUsers"></timer>
+	</panel>
+	<GamesOpen id="theGamesOpen"></GamesOpen>
+
+	<br />
+</page>
